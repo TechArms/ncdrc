@@ -1,0 +1,48 @@
+<div class="row" style="margin-top:80px;">
+    <div class="col-sm-6">
+        <div class="panel panel-success">
+            <div class="panel-heading">Customer Login</div>
+            <div class="panel-body">
+                <form name="customerLoginForm" role="CustomerLogin" ng-controller="AuthenticationController">
+                    <div class="form-group">
+                        <label for="userid">Username</label>
+
+                        <!-- <input type="text" class="form-control" placeholder="Username" ng-model="userid" required ng-pattern="word"/> -->
+                        <input type="text"  class="form-control" name="input" ng-model="userid" ng-pattern="word" required ng-trim="false">
+                         <span class="text-error"> </span>
+                         
+    Required!</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="userid">Password</label>
+                        <input type="password" class="form-control" placeholder="Password" ng-model="password" />
+                    </div>
+                    <button type="button" class="btn btn-primary " ng-click="submitCustomerLogin()">Submit</button>
+                    {{customerLoginForm.input.$valid}}
+                </form> 
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="panel panel-warning">
+            <div class="panel-heading">Servicer Login</div>
+            <div class="panel-body">
+                <form role="CustomerLogin">
+                    <div class="form-group">
+                        <label for="userid">Username</label>
+
+                        <input type="text" class="form-control" placeholder="Username" ng-model="userid" />
+                    </div>
+                    <div class="form-group">
+                        <label for="userid">Password</label>
+                        <input type="password" class="form-control" placeholder="Password" ng-model="password" />
+                    </div>
+                    <button type="button" class="btn btn-primary " ng-click="submitCustomerLogin()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="height:1500px;">
+        <!-- Reversed -->
+    </div>
+</div>

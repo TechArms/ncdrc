@@ -1,0 +1,21 @@
+.navbar-custom {
+    background-color: #6598CB;
+    color: #ffffff;
+    border-radius: 100;
+}
+.navbar-custom .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+.navbar-custom .navbar-brand {
+    color: #eeeeee;
+}
+/*.carousel {
+    width: 640px;
+    height: 360px;
+    text-align: center;
+}*/
+.carousel-inner > .item > img{ height:360px; width:100%; opacity: .8; border-radius: 50;}

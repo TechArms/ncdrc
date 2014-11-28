@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+    banner-heading: {
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width: 992px) {
+    banner-heading: {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    banner-heading: {
+        margin-top: 50px;
+    }
+}
+.footer-logo {
+    width: 60px;
+    height: auto;
+    opacity: .5;
+}
+.home-carousel-text-bg {
+    background-color: black;
+    opacity: .5;
+}
+
+div .articleListDesc{
+    overflow: hidden;
+  text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+  min-height: 30px;
+  width: 100%;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
