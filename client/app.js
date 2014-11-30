@@ -1,9 +1,9 @@
 var myConfig = ['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider
-        .when('/login', {
-            controller: "AuthenticationController",
-            templateUrl: 'login.html'
+        .when('/', {
+            controller: "HomeController",
+            templateUrl: '/modules/home/home.html'
         })
         .when('/home', {
             controller: "HomeController",
