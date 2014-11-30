@@ -1,0 +1,15 @@
+<div class="container">
+	<p>
+		<h2>{{article.title}}</h2>
+		<hr/>
+		<span style="float:left; margin:20px;display:inline">
+			<img ng-src="{{article.image}}" style="width:150px; height:auto;" />
+			<div class="disabled">{{article.imageCaption}}</div>
+		</span>
+		
+		<span ng-bind-html="article.desc" style="display:inline"></span> 
+		
+
+	</p>
+	
+</div>	

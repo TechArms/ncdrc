@@ -1,0 +1,3 @@
+myApp.controller("AboutusController", [function() {
+
+}]);

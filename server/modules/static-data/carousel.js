@@ -1,15 +1,15 @@
 module.exports = [{
-	image:'images/test/1.jpg',
-	title: 'Testing', 
-	desc: 'This image is added for the testing purpose'
+	image:'/images/test/1.jpg',
+	title: 'Cyber security', 
+	desc: 'Cyber security and its awareness program'
 },
 {
-	image:'images/test/Desert.jpg',
-	title: 'Desert', 
-	desc: 'This image is added from sample windows images'
+	image:'/images/test/2.jpg',
+	title: 'Cyber security', 
+	desc: 'Cyber security and its awareness'
 },
 {
-	image:'images/test/Hydrangeas.jpg',
-	title: 'Hydrangeas', 
-	desc: 'This image is added from sample windows images'
+	image:'/images/test/3.jpg',
+	title: 'Security', 
+	desc: 'Overall security'
 }]

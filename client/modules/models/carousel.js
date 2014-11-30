@@ -5,6 +5,7 @@ myApp.service("Carousel", ['DbService', '$q', function(DbService, $q) {
 		var deferred = $q.defer();
 		if(this.carouselList.length == 0) {
 			DbService.loadCarousel().then(function(result) {
+				this.carouselList = result.data;
 				deferred.resolve(result.data)	
 			}.bind(this), function(error) {
 			});

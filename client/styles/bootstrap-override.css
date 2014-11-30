@@ -1,7 +1,12 @@
 .navbar-custom {
-    background-color: #6598CB;
+    background: -webkit-linear-gradient(#6598CB, #154B81); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6598CB, #154B81); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6598CB, #154B81); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6598CB, #154B81); /* Standard syntax */
+    /*background-color: #6598CB;*/
     color: #ffffff;
     border-radius: 100;
+    border:0px;
 }
 .navbar-custom .navbar-nav > li > a {
     color: #fff;
@@ -13,9 +18,77 @@
 .navbar-custom .navbar-brand {
     color: #eeeeee;
 }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+
+ .nav> li > a:hover, .nav > li> a:focus{
+    background-color: #6598CB;
+    color: #ffffff;
+ }
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: #6598CB;
+    border-color: #337ab7;
+}
+.navbar-center
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
 /*.carousel {
     width: 640px;
     height: 360px;
     text-align: center;
 }*/
 .carousel-inner > .item > img{ height:360px; width:100%; opacity: .8; border-radius: 50;}
+
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+.dropdown-submenu>a:after {
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color:#ffffff;
+}
+.dropdown-submenu.pull-left {
+    float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}

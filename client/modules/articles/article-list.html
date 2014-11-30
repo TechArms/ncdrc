@@ -1,22 +1,21 @@
-<div class="row" style="border:1px dashed gray; background-color:#EEEEEE; width:90%;">
+<div class="row panel-body" ng-repeat="article in articleList track by $index">
   <div class="col-sm-2">
     <div class="thumbnail ">
-      <img data-src="holder.js/100x100" alt="..." src="images/test/1.jpg">
-      
+      <img alt="..." ng-src="{{article.image}}">      
     </div>
   </div>
   <div class="col-sm-9">
   <div class="caption">
-        <h3>Thumbnail label</h3>
-        <div class="articleListDesc">Hackers who stole the personal data of about 4.5 million patients of hospital group Community Health Systems Inc broke into the company's computer system by exploiting the "Heart bleed" internet bug, making it the first known large-scale cyber attack using the flaw, according to a security expert.
-
-The hackers, taking advantage of the pernicious vulnerability that surfaced in April, got into the system by using the Heart bleed bug in equipment made by Juniper Networks Inc, David ...
-</div>
-        <p><a href="#" class="btn btn-primary" role="button">Read</a></p>
+        <h3>{{article.title}}</h3>
+        <div class="articleListDesc">
+          <div ng-bind-html="article.smallDesc"></div>
+        </div>
+        <p><a ng-href="/articles/{{articleType}}/{{article.id}}" class="btn btn-primary" role="button">Read</a></p>
       </div>
   </div>
 </div>
 
+<!-- 
 
 <div class="media">
   <a class="media-left media-middle" href="#">
@@ -39,4 +38,4 @@ The hackers, taking advantage of the pernicious vulnerability that surfaced in A
       </div>
     </div>
   </div>
-</div>
+</div> -->

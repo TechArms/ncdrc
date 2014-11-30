@@ -15,13 +15,26 @@
     }
 }
 .footer-logo {
-    width: 60px;
+    width: 40px;
     height: auto;
     opacity: .5;
+}
+.footer-social-links{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .home-carousel-text-bg {
     background-color: black;
     opacity: .5;
+}
+
+.home-carousel-img{
+  display: block;
+  /*max-width:100%;*/
+  max-height:305px;
+  width: auto;
+  height: auto;
 }
 
 div .articleListDesc{
@@ -36,4 +49,18 @@ div .articleListDesc{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.home-acc-content {
+  height: 180px;
+  
+}
+.home-acc-desc{
+  max-height:150px;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+.home-acc-body{
+  height:350px;
+  overflow: auto;
 }

@@ -6,7 +6,8 @@
     {
       "name": "Dhayalan Prakasam",
       "email": "dhayalan88@yahoo.co.in"
-    }],
+    }
+  ],
   "website": {
     "url": ""
   },
@@ -17,6 +18,8 @@
   "dependencies": {
     "bower": "^1.3.12",
     "ejs": "^1.0.0",
-    "express": "^4.10.2"
+    "express": "^4.10.2",
+    "underscore": "^1.7.0",
+    "underscore.string": "^2.4.0"
   }
 }

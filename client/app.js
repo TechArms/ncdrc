@@ -7,11 +7,35 @@ var myConfig = ['$routeProvider', '$locationProvider', function($routeProvider, 
         })
         .when('/home', {
             controller: "HomeController",
-            templateUrl: 'modules/home/home.html'
+            templateUrl: '/modules/home/home.html'
         })
-        .when('/articles', {
+        .when('/articles/:type', {
             controller: "ArticleListController",
-            templateUrl: 'modules/articles/article-list.html'
+            templateUrl: '/modules/articles/article-list.html'
+        })
+        .when('/articles/:type/:id', {
+            controller: "ArticleController",
+            templateUrl: '/modules/articles/article.html'
+        })
+        .when('/websecurity', {
+            templateUrl: '/modules/research-pages/web-security.html'
+        })
+        .when('/networksecurity', {
+            templateUrl: '/modules/research-pages/network-security.html'
+        })
+        .when('/iotsecurity', {
+            templateUrl: '/modules/research-pages/iot-security.html'
+        })
+        .when('/cybersecurity', {
+            templateUrl: '/modules/research-pages/cyber-security.html'
+        })
+        .when('/aboutus', {
+            controller: "AboutusController",
+            templateUrl: '/modules/us/aboutus.html'
+        })
+        .when('/contactus', {
+            controller: "AboutusController",
+            templateUrl: '/modules/us/contactus.html'
         });
 }]
 
@@ -22,7 +46,7 @@ var myRun = ['$location', '$rootScope', function($location, $rootScope) {
         }
     });
 }]
-var myApp = angular.module("myApp", ['ngRoute', 'ui.bootstrap'])
+var myApp = angular.module("myApp", ['ngRoute', 'ngSanitize','ui.bootstrap'])
     .config(myConfig)
     .run(myRun);
 

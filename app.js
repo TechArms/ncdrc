@@ -22,6 +22,7 @@ app.get('/', function(req, res) {
 require('./server/routes')(app);
 
 app.get('*', function(req, res) {
+	// console.log(req.url)
     res.sendFile(__dirname + '/client/index.html');	
 })
 

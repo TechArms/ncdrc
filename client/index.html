@@ -2,30 +2,36 @@
 <html ng-app="myApp">
 
 <head>
-    <title>My page</title>
-    <link rel="icon" type="image/png" href="images/fav-icon.gif">
-    <script type="text/javascript" src="components/angular/angular.js"></script>
-    <script type="text/javascript" src="components/angular-route/angular-route.min.js"></script>
-    <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap.min.js"></script>
-    <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="components/jquery/dist/jquery.min.js"></script>
+    <title>NCDRC ::</title>
+    <link rel="icon" type="image/png" href="/images/logo2.gif">
+    <script type="text/javascript" src="/components/angular/angular.js"></script>
+    <script type="text/javascript" src="/components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="/components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="/components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="/components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/components/jquery/dist/jquery.min.js"></script>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/bootstrap-override.css">
+    <link rel="stylesheet" href="/styles/default.css">
+    <link rel="stylesheet" href="/styles/bootstrap-override.css">
 
 
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
 
-    <script type="text/javascript" src="modules/home/home-controller.js"></script>
-    <script type="text/javascript" src="modules/navigation/navigation-controller.js"></script>
-    <script type="text/javascript" src="modules/articles/article-list-controller.js"></script>
+    <script type="text/javascript" src="/modules/home/home-controller.js"></script>
+    <script type="text/javascript" src="/modules/navigation/navigation-controller.js"></script>
+    <script type="text/javascript" src="/modules/articles/article-list-controller.js"></script>
+    <script type="text/javascript" src="/modules/articles/article-controller.js"></script>
+    <script type="text/javascript" src="/modules/us/aboutus-controller.js"></script>
 
 
-    <script type="text/javascript" src="modules/models/carousel.js"></script>
-    <script type="text/javascript" src="modules/services/dbservice.js"></script>
+    <script type="text/javascript" src="/modules/models/carousel.js"></script>
+    <script type="text/javascript" src="/modules/models/menu.js"></script>
+    <script type="text/javascript" src="/modules/models/article.js"></script>
+    <script type="text/javascript" src="/modules/services/dbservice.js"></script>
+    <script type="text/javascript" src="/modules/common/utilities.js"></script>
 
 
 </head>
@@ -33,10 +39,12 @@
 <body>
     <div class="container">
     <div class="container" style="background-color: #fff;">
-        <div ng-include="'modules/navigation/banner.html'" />
+        <div ng-include="'/modules/navigation/banner.html'" />
     </div>
         <ng-view></ng-view>
-    <div ng-include="'modules/navigation/footer.html'" />
+        <br/>
+        <br/>
+    <div ng-include="'/modules/navigation/footer.html'" />
 </div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
