@@ -50,5 +50,4 @@ var myApp = angular.module("myApp", ['ngRoute', 'ngSanitize','ui.bootstrap'])
     .config(myConfig)
     .run(myRun);
 
-
-
+    
