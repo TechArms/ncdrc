@@ -2,13 +2,14 @@
 	<p>
 		<h2>{{article.title}}</h2>
 		<hr/>
-		<span style="float:left; margin:20px;display:inline">
-			<img ng-src="{{article.image}}" style="width:150px; height:auto;" />
-			<div class="disabled">{{article.imageCaption}}</div>
-		</span>
-		
-		<span ng-bind-html="article.desc" style="display:inline"></span> 
-		
+		<div style="float:left;  width:250px; text-align:center; margin:0px;">
+			<div style="margin:20px;border: 1px dashed gray; ">
+				<img ng-src="{{article.image}}" style="width:150px; height:auto;" />
+				<div class="disabled"><b>{{article.author}}</b> <br/>{{article.imageCaption}}</div>
+			</div>
+		</div>
+		<br/>
+		<div ng-bind-html="article.desc" style="padding: 10px;"></div> 
 
 	</p>
 	

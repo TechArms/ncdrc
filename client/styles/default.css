@@ -157,6 +157,27 @@ div .articleListDesc{
   transform: rotate(0deg);
 }
 
+.message-pics {
+  
+  float:left; 
+  padding:5px;
+  border: 1px dotted gray;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.message-pics img{
+  width: 120px;
+  height: auto;
+}
+.message-pics div{
+  font-size: 60%;
+}
+.panel-heading{
+  font-weight: bolder;
+  background-color: red;
+}
+
 body {
   /*background-color: #CCE0F5;*/
   background: -webkit-linear-gradient(#eeeeee, #bbbbbb); 

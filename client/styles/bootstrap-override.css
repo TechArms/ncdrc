@@ -85,6 +85,9 @@
 .dropdown-submenu.pull-left {
     float:none;
 }
+.footer-list{
+    list-style: none;
+}
 .dropdown-submenu.pull-left>.dropdown-menu {
     left:-100%;
     margin-left:10px;

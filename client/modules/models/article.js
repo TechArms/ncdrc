@@ -1,9 +1,11 @@
 myApp.service("Article", ['DbService', '$q', function(DbService, $q) {
-	this.newsList = []; 
-	this.annoucementList = []; 
+	this.news = []; 
+	this.annoucements = []; 
+	this.messages = []; 
 	this.types = {
-		news: "newsList",
-		annoucements: "annoucementList"
+		news: "news",
+		annoucements: "annoucements",
+		messages: "messages"
 	}
 
 	this.loadArticle = function(type) {

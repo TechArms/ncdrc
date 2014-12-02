@@ -10,7 +10,11 @@ module.exports = function(app) {
 
 	app.get("/article/news/:id", article.getNewsById);
 
-	app.get("/article/annoucements", article.getAnnoucement);
+	app.get("/article/annoucements", article.getAnnoucements);
 
 	app.get("/article/annoucements/:id", article.getAnnoucementById);
+
+	app.get("/article/messages", article.getMessages);
+
+	app.get("/article/messages/:id", article.getMessageById);
 }	

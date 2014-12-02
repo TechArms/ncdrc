@@ -1,32 +1,29 @@
 myApp.service('DbService', ['$http', function($http) {
+	var getArticleType = function(type) {
+		var articleType = ""
+		switch(type) {
+			case "news":
+				articleType = "news";
+				break;
+			case "annoucements":
+				articleType = "annoucements";
+				break;
+			case "messages":
+				articleType = "messages";
+				break;
+		}
+		return articleType;
+	}
 	this.loadMenu = function() {
 		return $http.get('/menu');
 	}
 	this.loadCarousel = function() {
 		return $http.get('/homecarousels');
 	}
-	this.loadArticles = function(type) {
-		var articleType = ""
-		switch(type) {
-			case "newsList":
-				articleType = "news";
-				break;
-			case "annoucementList":
-				articleType = "annoucements";
-				break;
-		}
-		return $http.get('/article/'+articleType);
+	this.loadArticles = function(type) {		
+		return $http.get('/article/'+getArticleType(type));
 	}
 	this.loadArticleById = function(type, id) {
-		var articleType = ""
-		switch(type) {
-			case "newsList":
-				articleType = "news";
-				break;
-			case "annoucementList":
-				articleType = "annoucements";
-				break;
-		}
-		return $http.get('/article/'+articleType+'/'+id);
+		return $http.get('/article/'+getArticleType(type)+'/'+id);
 	}
 }])

@@ -11,6 +11,9 @@ myApp.controller("HomeController", ['$scope', 'Carousel', 'Article', function($s
         $scope.annoucements = result;
     });
 
+    Article.loadArticle(Article.types.messages).then(function(result) {
+        $scope.messages = result;
+    });
     $scope.oneAtATime = true;
 
     

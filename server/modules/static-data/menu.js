@@ -48,5 +48,11 @@ module.exports = [
                 desc: "About NCDRC"
             }
         ]
+    },
+    {
+        name: "Contact us",
+        url: "/contactus",
+        desc: "Reach us"
+       
     }
 ]

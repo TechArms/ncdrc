@@ -1,6 +1,7 @@
 var news = require("./static-data/news");
 var messages = require("./static-data/news");
-var annoucement = require("./static-data/annoucement");
+var annoucements = require("./static-data/annoucements");
+var messages = require("./static-data/messages");
 var _ = require("underscore");
 
 module.exports = {
@@ -10,11 +11,17 @@ module.exports = {
 	getNewsById: function(req, res) {
 		getArticleById(news, req, res);
 	},
-	getAnnoucement: function(req, res) {
-		res.send(annoucement);		
+	getAnnoucements: function(req, res) {
+		res.send(annoucements);		
 	},
 	getAnnoucementById: function(req, res) {
-		getArticleById(annoucement, req, res);
+		getArticleById(annoucements, req, res);
+	},
+	getMessages: function(req, res) {
+		res.send(messages);		
+	},
+	getMessageById: function(req, res) {
+		getArticleById(messages, req, res);
 	}
 }
 
