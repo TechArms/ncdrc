@@ -46,7 +46,7 @@ var myRun = ['$location', '$rootScope', function($location, $rootScope) {
         }
     });
 }]
-var myApp = angular.module("myApp", ['ngRoute', 'ngSanitize','ui.bootstrap'])
+var myApp = angular.module("myApp", ['ngRoute', 'ngSanitize','ui.bootstrap', 'pasvaz.bindonce'])
     .config(myConfig)
     .run(myRun);
 

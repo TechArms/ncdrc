@@ -10,7 +10,8 @@
     "angular-bootstrap": "latest",
     "jquery": "latest",
     "angular-route": "1.2.27",
-    "angular-sanitize": "1.2.27"
+    "angular-sanitize": "1.2.27",
+    "angular-bindonce": "latest"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.16"

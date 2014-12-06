@@ -1,6 +1,6 @@
-<div>
+<div> 
     <div ng-include="'/modules/common/home-carousel.html'"></div>
-    <div class="row" style="margin-top:80px;">
+    <div class="row" style="margin-top:20px;">
         <div class="col-sm-6">
             <div class="panel panel-success">
                 <div class="panel-heading">
@@ -14,14 +14,14 @@
                 </div>
                 <div class="panel-body home-acc-body">
                     <accordion close-others="oneAtATime">
-                        <accordion-group heading="{{message.title}}" ng-init="isOpen = ($index==0)" ng-repeat="message in messages track by $index" class="text-overflow">
+                        <accordion-group heading="{{message.title}}" ng-init="isOpen = ($index==0)" bindonce ng-repeat="message in messages track by $index" class="text-overflow">
 
                           <div class="home-acc-content"> 
                             <div class="message-pics">
                                 <img ng-src="{{message.image}}"/>
                                 <div class="disabled"><b>{{message.author}}</b> <br/>{{message.imageCaption}}</div>
                             </div>
-                                <div class="home-acc-desc" ng-bind-html="message.desc"></div>
+                                <div class="home-acc-desc" ng-bind-html="message.desc | substring:200"></div>
                             <a ng-href="/articles/messages/{{message.id}}" class="btn btn-primary">Read</a>
                           </div>
                         </accordion-group> 
@@ -42,10 +42,10 @@
                 </div>
                 <div class="panel-body home-acc-body">
                     <accordion close-others="oneAtATime">
-                        <accordion-group heading="{{annoucement.title}}" ng-repeat="annoucement in annoucements track by $index" class="text-overflow">
+                        <accordion-group heading="{{annoucement.title}}" bindonce ng-repeat="annoucement in annoucements track by $index" class="text-overflow">
 
                           <div class=""> 
-                            <div class="home-acc-desc" ng-bind-html="annoucement.desc"></div>
+                            <div class="home-acc-desc" ng-bind-html="annoucement.desc | substring:200"></div>
                             <a ng-href="/articles/annoucements/{{annoucement.id}}" class="btn btn-primary">Read</a>
                           </div>
                         </accordion-group>

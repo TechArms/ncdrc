@@ -3,14 +3,14 @@
         margin-top: 0px;
     }
     .banner-heading div h2 {
-      font-size: 150%;
+        font-size: 150%;
     }
     .banner-heading div h4 {
-      display: none;
+        display: none;
     }
-    .homeCarousel{
-      max-height: 200px;
-      width: auto;
+    .homeCarousel {
+        max-height: 200px;
+        width: auto;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -19,11 +19,11 @@
         margin-left: 20px;
     }
     .banner-heading div h2 {
-      font-size: 170%;
+        font-size: 170%;
     }
-    .homeCarousel{
-      max-height: 280px;
-      width: auto;
+    .homeCarousel {
+        max-height: 280px;
+        width: auto;
     }
 }
 @media screen and (min-width: 993px) {
@@ -36,8 +36,8 @@
     height: auto;
     opacity: .5;
 }
-.footer-social-links{
-  list-style-type: none;
+.footer-social-links {
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -45,145 +45,167 @@
     background-color: black;
     opacity: .5;
 }
-
-.home-carousel-img{
-  display: block;
-  /*max-width:100%;*/
-  max-height:305px;
-  width: auto;
-  height: auto;
+.home-carousel-img {
+    display: block;
+    /*max-width:100%;*/
+    
+    max-height: 305px;
+    width: auto;
+    height: auto;
 }
-
-div .articleListDesc{
+div .articleListDesc {
     overflow: hidden;
-  text-overflow: ellipsis;
-  /*white-space: nowrap;*/
-  min-height: 30px;
-  width: 100%;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    
+    min-height: 30px;
+    width: 100%;
 }
-
 .text-overflow {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
 .home-acc-content {
-  height: 180px;
-  
+    height: 180px;
 }
-.home-acc-desc{
-  max-height:150px;
-  white-space: normal;
-  text-overflow: ellipsis;
+.home-acc-desc {
+    max-height: 150px;
+    white-space: normal;
+    text-overflow: ellipsis;
 }
-.home-acc-body{
-  height:350px;
-  overflow: auto;
+.home-acc-body {
+    height: 350px;
+    overflow: auto;
 }
-
 /*Social network links*/
 
 .social {
-  position: fixed;
-  top: 20px;
-  left: 10px;
+    position: fixed;
+    top: 20px;
+    left: 10px;
 }
 .social ul {
-  padding: 0px;
-  -webkit-transform: translate(-270px, 0);
-  -moz-transform: translate(-270px, 0);
-  -ms-transform: translate(-270px, 0);
-  -o-transform: translate(-270px, 0);
-  transform: translate(-270px, 0);
+    padding: 0px;
+    -webkit-transform: translate(-270px, 0);
+    -moz-transform: translate(-270px, 0);
+    -ms-transform: translate(-270px, 0);
+    -o-transform: translate(-270px, 0);
+    transform: translate(-270px, 0);
 }
 .social ul li {
-  display: block;
-  margin: 5px;
-  background: rgba(0, 0, 0, 0.36);
-  width: 300px;
-  text-align: right;
-  padding: 10px;
-  -webkit-border-radius: 0 30px 30px 0;
-  -moz-border-radius: 0 30px 30px 0;
-  border-radius: 0 30px 30px 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+    display: block;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.36);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    -webkit-border-radius: 0 30px 30px 0;
+    -moz-border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 .social ul li:hover {
-  -webkit-transform: translate(110px, 0);
-  -moz-transform: translate(110px, 0);
-  -ms-transform: translate(110px, 0);
-  -o-transform: translate(110px, 0);
-  transform: translate(110px, 0);
-  background: rgba(255, 255, 255, 0.4);
+    -webkit-transform: translate(110px, 0);
+    -moz-transform: translate(110px, 0);
+    -ms-transform: translate(110px, 0);
+    -o-transform: translate(110px, 0);
+    transform: translate(110px, 0);
+    background: rgba(255, 255, 255, 0.4);
 }
 .social ul li:hover a {
-  color: #000;
+    color: #000;
 }
 .social ul li:hover i {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.36);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 .social ul li i {
-  margin-left: 10px;
-  color: #000;
-  background: #fff;
-  padding: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  background: #ffffff;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
-
 .message-pics {
-  
-  float:left; 
-  padding:5px;
-  border: 1px dotted gray;
-  border-radius: 10px;
-  margin: 10px;
-  text-align: center;
+    float: left;
+    padding: 5px;
+    border: 1px dotted gray;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
 }
-.message-pics img{
-  width: 120px;
-  height: auto;
+.message-pics img {
+    width: 120px;
+    height: auto;
 }
-.message-pics div{
-  font-size: 60%;
+.message-pics div {
+    font-size: 60%;
 }
-.panel-heading{
-  font-weight: bolder;
-  background-color: red;
+.panel-heading {
+    font-weight: bolder;
+    background-color: red;
 }
-
 body {
-  /*background-color: #CCE0F5;*/
-  background: -webkit-linear-gradient(#eeeeee, #bbbbbb); 
+    background-color: #bbbbbb;
+    /*background: -webkit-linear-gradient(#eeeeee, #bbbbbb); 
     background: -o-linear-gradient(#eeeeee, #bbbbbb); 
     background: -moz-linear-gradient(#eeeeee, #bbbbbb);
-    background: linear-gradient(#eeeeee, #bbbbbb); 
+    background: linear-gradient(#eeeeee, #bbbbbb); */
 }
 /*Social network links*/
 
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+h1 h2 h3 h4 h5 h6 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+.header {
+    background-color: #FF9933;
+    color: #ffffff;
+}
+.content {
+    color: #000000;
+    /*background: url('/images/bg.png');*/
+    /*content: "";*/
+    /*opacity: 0.5;*/
+    /*position: absolute;*/
+    /*z-index: -1;*/
+    background-color: white;
+    /*opacity: .3;*/
+}
+.footer {
+    background-color: green;
+}
+.footer-list {
+    color: white;
+}
+.footer-list li :hover {
+    text-decoration: underline;
+}

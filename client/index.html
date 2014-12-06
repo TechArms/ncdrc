@@ -10,6 +10,7 @@
     <script type="text/javascript" src="/components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script type="text/javascript" src="/components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/components/angular-bindonce/bindonce.min.js"></script>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -32,20 +33,22 @@
     <script type="text/javascript" src="/modules/models/article.js"></script>
     <script type="text/javascript" src="/modules/services/dbservice.js"></script>
     <script type="text/javascript" src="/modules/common/utilities.js"></script>
+    <script type="text/javascript" src="/modules/common/filters/text.js"></script>
 
 
 </head>
 
 <body>
     <div class="container">
-    <div class="container" style="background-color: #fff;">
-        <div ng-include="'/modules/navigation/banner.html'" />
+    <div class="container header">
+        <div ng-include="'/modules/navigation/banner.html'"/>
     </div>
-        <ng-view></ng-view>
+    <div class="content">
+         <ng-view></ng-view>
         <br/>
-        <br/>
-        <br/>
-    <div ng-include="'/modules/navigation/footer.html'" />
+    </div>
+       
+    <div ng-include="'/modules/navigation/footer.html'" class="footer"/>
 </div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
