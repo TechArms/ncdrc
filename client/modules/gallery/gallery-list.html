@@ -1,6 +1,6 @@
 <div>
     <carousel interval="myInterval">
-        <slide ng-repeat="slide in Carousels" active="slide.active">
+        <slide ng-repeat="slide in selectedGallery" active="slide.active">
             <img class="homeCarousel" ng-src="{{slide.image}}" style="margin:auto;">
             <div class="carousel-caption ">
                 <!-- <h4>Slide {{$index}}</h4> -->
@@ -12,3 +12,6 @@
         </slide>
     </carousel>
 </div>
+
+
+<div gallery-list="galleryList" select-gallery="selectGallery" limit-to="40"  />

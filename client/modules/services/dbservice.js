@@ -26,4 +26,10 @@ myApp.service('DbService', ['$http', function($http) {
 	this.loadArticleById = function(type, id) {
 		return $http.get('/article/'+getArticleType(type)+'/'+id);
 	}
+	this.loadGalleries = function() {		
+		return $http.get('/galleries/');
+	}
+	this.loadGalleryById = function(id) {
+		return $http.get('/galleries/'+id);
+	}
 }])

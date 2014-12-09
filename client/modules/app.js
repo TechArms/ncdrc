@@ -36,6 +36,14 @@ var myConfig = ['$routeProvider', '$locationProvider', function($routeProvider, 
         .when('/contactus', {
             controller: "AboutusController",
             templateUrl: '/modules/us/contactus.html'
+        })
+        .when('/galleries', {
+            controller: "GalleryListController",
+            templateUrl: '/modules/gallery/gallery-list.html'
+        })
+        .otherwise({
+            templateUrl: '/modules/exceptions/page-not-found.html'
+
         });
 }]
 

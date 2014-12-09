@@ -1,8 +1,13 @@
-myApp.controller("HomeController", ['$scope', 'Carousel', 'Article', function($scope, Carousel, Article) {
+myApp.controller("HomeController", ['$scope', 'Carousel', 'Article', 'Gallery', 
+    function($scope, Carousel, Article, Gallery) {
     $scope.Carousels = [];
     $scope.annoucements = [];
     $scope.myInterval = 5000;
+    $scope.galleryList = [];
 
+    Gallery.loadGalleries().then(function(result) {
+        $scope.galleryList = result;
+    })
     Carousel.loadCarousel().then(function(result) {
         $scope.Carousels = result;
     });
@@ -16,7 +21,7 @@ myApp.controller("HomeController", ['$scope', 'Carousel', 'Article', function($s
     });
     $scope.oneAtATime = true;
 
-    
+
 
 
 }])
