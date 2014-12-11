@@ -1,17 +1,30 @@
-myApp.controller("GalleryListController", ['$scope', '$routeParams', 'Gallery',
-    function($scope, $routeParams, Gallery) {
+myApp.controller("GalleryListController", ['$scope', '$rootScope', '$routeParams', '$modal', 'Gallery',
+    function($scope, $rootScope, $routeParams, $modal, Gallery) {
         $scope.galleryList = [];
-        $scope.selectedGallery = {};
+        // $scope.selectedGallery = {};
 
         Gallery.loadGalleries().then(function(result) {
             $scope.galleryList = result;
         })
 
         $scope.selectGallery = function(id) {
-        	Gallery.loadGalleryById(id).then(function(result) {
-	            $scope.selectedGallery = result;
-	        })
-        }
+            $rootScope.selectedGalleryId =id;
+            var modalInstance = $modal.open({
+                backdrop: true,
+                keyboard: true,
+                backdropClick: true,
+                templateUrl: '/modules/gallery/gallery.html',
+                controller: 'GalleryController',
+                // resolve: {
+                //     galleryId: function() {
+                //         return id;
+                //     }
+                // }
+                // scope: {
+                //     id: id
+                // }
+            })
 
+        }
     }
 ])

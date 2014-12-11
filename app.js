@@ -2,8 +2,8 @@ var express = require('express');
 // var http = require('http');
 
 var app = express();
-app.use(express.static(__dirname + '/client'))
-// app.use(express.static(__dirname + '/client', {maxAge: 2592000}))
+// app.use(express.static(__dirname + '/client'))
+app.use(express.static(__dirname + '/client', {maxAge: 2592000}))
 
 var router = express.Router({
     caseSensitive: true,

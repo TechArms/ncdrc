@@ -1,16 +1,16 @@
 module.exports = [
-    {
-        name: "Home",
-        url: "/home",
-        desc: "Main page of the application"
-    },
+    // {
+    //     name: "Home",
+    //     url: "/home",
+    //     desc: "Main page of the application"
+    // },
     {
         name: "Projects",
         url: "#",
         desc: "Provides the research center dropdown menu",
         menu: [
             {
-                name: "Research",
+                name: "Research centers",
                 url: "#",
                 submenu: [
                     {

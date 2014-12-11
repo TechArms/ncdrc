@@ -12,6 +12,10 @@
         max-height: 200px;
         width: auto;
     }
+    .galleryCarousel {
+        height: 100%;
+        width: auto;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .banner-heading {
@@ -25,10 +29,18 @@
         max-height: 280px;
         width: auto;
     }
+    .galleryCarousel {
+        height: 100%;
+        width: auto;
+    }
 }
 @media screen and (min-width: 993px) {
     .banner-heading {
         margin-top: 20px;
+    }
+    .galleryCarousel {
+        height: 500px;
+        width: auto;
     }
 }
 .footer-logo {
@@ -206,6 +218,6 @@ h1 h2 h3 h4 h5 h6 {
 .footer-list {
     color: white;
 }
-.footer-list li :hover {
+.footer-list>div :hover {
     text-decoration: underline;
 }

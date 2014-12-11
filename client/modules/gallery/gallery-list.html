@@ -1,17 +1,2 @@
-<div>
-    <carousel interval="myInterval">
-        <slide ng-repeat="slide in selectedGallery" active="slide.active">
-            <img class="homeCarousel" ng-src="{{slide.image}}" style="margin:auto;">
-            <div class="carousel-caption ">
-                <!-- <h4>Slide {{$index}}</h4> -->
-                <div style="background-color: black; opacity:.6; margin-top:20px;">
-                    <h3><p>{{slide.title}}</p></h3>
-                    <p>{{slide.desc}}</p>
-                </div>
-            </div>
-        </slide>
-    </carousel>
-</div>
-
-
+<br/>
 <div gallery-list="galleryList" select-gallery="selectGallery" limit-to="40"  />
