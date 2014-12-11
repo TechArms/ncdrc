@@ -1,4 +1,4 @@
-myApp.controller("GalleryController", ['$scope', '$rootScope', '$routeParams', '$modal', 'Gallery', '$modalInstance',
+myApp.controller("GalleryController", ['$scope', '$rootScope', '$routeParams', '$modalInstance', 'Gallery',
     function($scope, $rootScope, $routeParams, $modalInstance, Gallery) {
         $scope.gallery = {};
 
@@ -7,7 +7,7 @@ myApp.controller("GalleryController", ['$scope', '$rootScope', '$routeParams', '
         })
 
         $scope.cancel = function() {
-        	alert($modalInstance)
+        	// alert($modalInstance)
             $modalInstance.close('cancel');
         };
 
