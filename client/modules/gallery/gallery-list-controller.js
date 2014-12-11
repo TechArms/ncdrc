@@ -14,15 +14,7 @@ myApp.controller("GalleryListController", ['$scope', '$rootScope', '$routeParams
                 keyboard: true,
                 backdropClick: true,
                 templateUrl: '/modules/gallery/gallery.html',
-                controller: 'GalleryController',
-                // resolve: {
-                //     galleryId: function() {
-                //         return id;
-                //     }
-                // }
-                // scope: {
-                //     id: id
-                // }
+                controller: 'GalleryController'
             })
 
         }

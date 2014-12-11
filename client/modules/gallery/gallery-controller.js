@@ -7,6 +7,7 @@ myApp.controller("GalleryController", ['$scope', '$rootScope', '$routeParams', '
         })
 
         $scope.cancel = function() {
+        	alert($modalInstance)
             $modalInstance.close('cancel');
         };
 

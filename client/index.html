@@ -5,12 +5,12 @@
     <title>NCDRC :: Under Construction</title>
     <link rel="icon" type="image/png" href="/images/fav-icon.png">
 
-<!--     <link rel="stylesheet" href="/components/bootstrap/bootstrap.min.css">
+    <!--     <link rel="stylesheet" href="/components/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/components/bootstrap/bootstrap-theme.min.css">
  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-    
+
     <link rel="stylesheet" href="/styles/default.css">
     <link rel="stylesheet" href="/styles/bootstrap-override.css">
 
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="/modules/articles/article-controller.js"></script>
     <script type="text/javascript" src="/modules/gallery/gallery-list-controller.js"></script>
     <script type="text/javascript" src="/modules/gallery/gallery-controller.js"></script>
-  
+
     <script type="text/javascript" src="/modules/us/aboutus-controller.js"></script>
     <script type="text/javascript" src="/modules/services/dbservice.js"></script>
     <script type="text/javascript" src="/modules/common/utilities.js"></script>
@@ -48,16 +48,18 @@
 
 <body>
     <div class="container">
-    <div class="container header">
-        <div ng-include="'/modules/navigation/banner.html'"/>
+        <div class="container header">
+            <div ng-include="'/modules/navigation/banner.html'" />
+        </div>
+        <div class="content">
+            <div class="page-view">
+                <ng-view></ng-view>
+            </div>
+            <br/>
+        </div>
+
+        <div ng-include="'/modules/navigation/footer.html'" class="footer" />
     </div>
-    <div class="content">
-         <ng-view></ng-view>
-        <br/>
-    </div>
-       
-    <div ng-include="'/modules/navigation/footer.html'" class="footer"/>
-</div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>

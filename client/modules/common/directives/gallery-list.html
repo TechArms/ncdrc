@@ -1,10 +1,10 @@
-<div class="container row" >
+<div class="container row">
     <div class="col-sm-3 col-xs-6" ng-repeat="gallery in galleryList | limitTo:limitTo">
         <a ng-click="selectGallery(gallery.id)" class="thumbnail">
-            <img ng-src="{{gallery.face}}" alt="gallery.desc" ng-mouseover="selectedGallery=$index" ng-mouseout="selectedGallery=null"/>
-            <div ng-show="selectedGallery==$index">
-            	<b>{{gallery.name}}</b>
-            	{{gallery.desc | substring: 20}}
+            <img ng-src="{{gallery.face}}" alt="{{gallery.desc}}" ng-mouseover="selectedGallery=$index" ng-mouseout="selectedGallery=null" />
+            <div>
+            	<b>{{gallery.name}}</b><br/>	
+            	{{gallery.desc | substring: 30}}
             </div>
         </a>
     </div>

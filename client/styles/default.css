@@ -1,11 +1,21 @@
+/* Primary Colors 
+#558C89 - Window back color
+#74AFAD - Section header
+#D9853B - Footer back color
+#ECECEA - Header back color
+
+*/
+
 @media screen and (max-width: 768px) {
     .banner-heading {
         margin-top: 0px;
     }
-    .banner-heading div h2 {
-        font-size: 150%;
+    .banner-heading>div>h2 {
+        font-size: 120%;
+        /*background-color: red;*/
     }
-    .banner-heading div h4 {
+    .banner-heading>div>h6 {
+        /*font-size: 80%;*/
         display: none;
     }
     .homeCarousel {
@@ -22,7 +32,7 @@
         margin-top: 20px;
         margin-left: 20px;
     }
-    .banner-heading div h2 {
+    .banner-heading>div>h2 {
         font-size: 170%;
     }
     .homeCarousel {
@@ -181,10 +191,10 @@ div .articleListDesc {
 }
 .panel-heading {
     font-weight: bolder;
-    background-color: red;
+    background-color: #74AFAD;
 }
 body {
-    background-color: #bbbbbb;
+    background-color: #558C89;
     /*background: -webkit-linear-gradient(#eeeeee, #bbbbbb); 
     background: -o-linear-gradient(#eeeeee, #bbbbbb); 
     background: -moz-linear-gradient(#eeeeee, #bbbbbb);
@@ -199,8 +209,8 @@ h1 h2 h3 h4 h5 h6 {
     font-family: Impact, Charcoal, sans-serif;
 }
 .header {
-    background-color: #FF9933;
-    color: #ffffff;
+    background-color: #ECECEA;
+    color: #222222;
 }
 .content {
     color: #000000;
@@ -209,15 +219,23 @@ h1 h2 h3 h4 h5 h6 {
     /*opacity: 0.5;*/
     /*position: absolute;*/
     /*z-index: -1;*/
+    
     background-color: white;
     /*opacity: .3;*/
 }
 .footer {
-    background-color: green;
+    background-color: #D9853B;
 }
 .footer-list {
     color: white;
 }
-.footer-list>div :hover {
+.footer-list>div:hover {
     text-decoration: underline;
+}
+.page-view {
+    margin: 20px;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
 }

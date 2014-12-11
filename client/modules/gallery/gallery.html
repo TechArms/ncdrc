@@ -6,11 +6,9 @@
     <carousel interval="myInterval">
         <slide ng-repeat="slide in gallery.album" active="slide.active">
             <img class="galleryCarousel" ng-src="{{slide.image}}" style="margin:auto; height:100%;">
-            <div>
-                <div >
-                    <h3><p>{{slide.title}}</p></h3>
-                    <p>{{slide.desc}}</p>
-                </div>
+            <div style="background-color:#ECECEA;">
+                    <h4>{{slide.title}}</h4>
+                    {{slide.desc}}
             </div>
 
         </slide>
@@ -18,5 +16,5 @@
 </div>
 <div class="modal-footer">
     <!-- <button class="btn btn-primary" ng-click="ok()">OK</button> -->
-    <!-- <button class="btn btn-warning" ng-click="cancel()">Cancel</button> -->
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
 </div>

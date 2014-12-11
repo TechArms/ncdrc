@@ -108,31 +108,23 @@
 .thumbnail {
     width: 100%;
     max-width:200px;
+    height:180px;
 }
 .thumbnail>img {
-    width: 90%;
+    width: 70%;
+
 }
 .thumbnail>img:hover {
-    width: 95%;
+    width: 75%;
     max-height: 100%;
 }
-.thumbnailHover {
-    display: none;
-    opacity: .4;
-    width: 100%;
-    position: absolute;
-    background-color: black;
-}
-.thumbnailHover:hover {
-    display: inline;
+.thumbnail:hover {
+    
+    background-color: #ECECEA;
 }
 .thumbnail>div {
-    margin-top: -30px;
-    background-color: #000000;
-    position: absolute;
-    width: 85%;
-    opacity: 1.0;
-    color: white;
+    width: 100%;
     text-align: center;
     max-width:200px;
+    font-size: 60%;
 }
