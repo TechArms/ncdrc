@@ -53,6 +53,10 @@
         </div>
         <div class="content">
             <div class="page-view">
+                <div ng-show="pageName">
+                    <h2> {{pageName}} </h2>
+                    <hr/>
+                </div>
                 <ng-view></ng-view>
             </div>
             <br/>

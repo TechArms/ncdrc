@@ -1,5 +1,4 @@
-<h3>{{pageName}}</h3><hr/>
-<div class="row panel-body" ng-repeat="article in articleList track by $index">
+<!-- <div class="row panel-body" ng-repeat="article in articleList track by $index">
   <div class="col-sm-2">
     <div class="thumbnail ">
       <img alt="..." ng-src="{{article.image}}">      
@@ -15,28 +14,21 @@
       </div>
   </div>
 </div>
+ -->
 
-<!-- 
-
-<div class="media">
-  <a class="media-left media-middle" href="#">
-      <img data-src="holder.js/100x100" alt="..." src="images/test/1.jpg">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading">Middle aligned media</h4>
-    ...adfadfadfadf
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img data-src="holder.js/100x100" alt="..." src="images/test/1.jpg">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
+<div class="row panel-body" style="border-bottom: 1px dashed gray" ng-repeat="article in articleList track by $index">
+    <div style="float:left;  width:250px; text-align:center; margin:0px;">
+        <div style="margin:20px;border: 1px dashed gray; ">
+            <img ng-src="{{article.image}}" style="width:150px; height:auto;" />
+            <div class="disabled"><b>{{article.author}}</b>
+                <br/>{{article.imageCaption}}</div>
+        </div>
     </div>
-  </div>
-</div> -->
+    <div>
+        <div class="caption">
+            <h3>{{article.title}}</h3>
+            <div ng-bind-html="article.desc | substring: 300"></div>
+            <a ng-href="/articles/{{articleType}}/{{article.id}}" class="btn btn-primary right" role="button">Read</a>
+        </div>
+    </div>
+</div>

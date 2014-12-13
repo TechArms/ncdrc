@@ -49,7 +49,8 @@
         margin-top: 20px;
     }
     .galleryCarousel {
-        height: 500px;
+        height: 300px;
+        /*height: 100%;*/
         width: auto;
     }
 }
@@ -192,9 +193,11 @@ div .articleListDesc {
 .panel-heading {
     font-weight: bolder;
     background-color: #74AFAD;
+    min-height:30px;
 }
 body {
     background-color: #558C89;
+    /*font-size:12px;*/
     /*background: -webkit-linear-gradient(#eeeeee, #bbbbbb); 
     background: -o-linear-gradient(#eeeeee, #bbbbbb); 
     background: -moz-linear-gradient(#eeeeee, #bbbbbb);
@@ -229,8 +232,10 @@ h1 h2 h3 h4 h5 h6 {
 .footer-list {
     color: white;
 }
-.footer-list>div:hover {
-    text-decoration: underline;
+
+.footer-list>a{
+    display: block;
+    color: white;
 }
 .page-view {
     margin: 20px;
@@ -238,4 +243,17 @@ h1 h2 h3 h4 h5 h6 {
 p {
     text-align: justify;
     text-justify: inter-word;
+}
+.left{
+    float:left;
+    /*margin-top:-10px;*/
+}
+.right{
+    float:right;
+    /*margin-top:-10px;*/
+}
+.exception-heading{
+    min-height: 300px;
+    font-size: 30px;
+    font-color: red;    
 }

@@ -11,13 +11,14 @@ myApp.service("Article", ['DbService', '$q', function(DbService, $q) {
 	this.loadArticle = function(type) {
 		var deferred = $q.defer();
 		if(!this[type]) {
-			deferred.resolve([])	
+			deferred.reject(new Error("Not found"))	
 		} else {
 			if(this[type].length == 0) {
 				DbService.loadArticles(type).then(function(result) {
 					this[type] = result.data;
 					deferred.resolve(result.data)	
 				}.bind(this), function(error) {
+					deferred.reject(error);
 				});
 			} else {		
 					deferred.resolve(this[type]);
@@ -35,6 +36,7 @@ myApp.service("Article", ['DbService', '$q', function(DbService, $q) {
 			DbService.loadArticleById(type, id).then(function(result) {
 				deferred.resolve(result.data)	
 			}.bind(this), function(error) {
+				deferred.reject(error)
 			});
 		}
 		return deferred.promise;
