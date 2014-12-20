@@ -15,6 +15,7 @@
     color: #ffffff;
     border-radius: 100;
     border: 0px;
+    /*width:100%;*/
 }
 .navbar-custom .navbar-nav > li > a {
     color: #fff;
@@ -49,6 +50,7 @@
     margin: auto;
     color: black;
 }
+@media (min-width:1200px){.container{width:94%}}
 /*.carousel {
     width: 640px;
     height: 360px;
@@ -95,9 +97,9 @@
 .dropdown-submenu.pull-left {
     float: none;
 }
-.footer-list {
+/*.footer-list {
     list-style: none;
-}
+}*/
 .dropdown-submenu.pull-left>.dropdown-menu {
     left: -100%;
     margin-left: 10px;
@@ -115,7 +117,7 @@
     width: 90%;
 }
 .thumbnail>img:hover {
-    width: 95%;
+    width: 90%;
     max-height: 100%;
 }
 .thumbnail:hover {

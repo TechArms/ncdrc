@@ -47,23 +47,22 @@
 </head>
 
 <body>
-    <div class="container">
+    <div >
         <div class="container header">
-            <div ng-include="'/modules/navigation/banner.html'" />
+            <div ng-include="'/modules/navigation/banner.html'"> </div>
         </div>
-        <div class="content">
+        <div class="container content">
             <div class="page-view">
                 <div ng-show="pageName">
-                    <h2> {{pageName}} </h2>
-                    <hr/>
+                    <h2 class="ruler"> {{pageName}} </h2>
                 </div>
                 <ng-view></ng-view>
             </div>
             <br/>
         </div>
 
-        <div ng-include="'/modules/navigation/footer.html'" class="footer" />
     </div>
+    <div ng-include="'/modules/navigation/footer.html'" class="footer"/>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>

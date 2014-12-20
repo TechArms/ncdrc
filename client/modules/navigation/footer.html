@@ -1,78 +1,16 @@
-<!-- 
-<nav class="navbar navbar-custom navbar-fixed-bottom" role="footer" style="height:20px;">
-    <div class="container-fluid">
-        <div class="navbar-header">
-
-        </div>
-
-        <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
-           <ul class="nav navbar-nav">
-                <li class="dropdown dropup">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">FAQ</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="/contactus">Contact us</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <span class="navbar-center" >
-                <span class="text-default">&copy; Copyright 2013-2014 | &reg; All Rights Reserved</span>
-               
-            </span>
-            <ul class="nav navbar-nav navbar-right">                
-                <li><img class="footer-logo" src="/images/logo2.png"></li>
-                <li class="text-default"></li>
-            </ul>
-        </div>
+<div class="row" ng-controller="NavigationController">
+    <div class="col-sm-3" ng-repeat="footer in footers">
+        {{footer.title}}
+        <a class="block" ng-repeat="link in footer.links" ng-href="{{link.url}}">{{link.title}}</a>
     </div>
-</nav>
- -->
-<!-- <img src="/images/footerbg.png" style="width:100%;">    -->
-    <div class="container row">
-        <div class="col-sm-3">
-            <h5>Projects
-            <small class="footer-list">
-                    <a href="/underconstruction">Research centers</a>
-                    <a href="/underconstruction">Audits</a>
-                    <a href="/underconstruction">Cyber security conferences</a>
-                    <a href="/underconstruction">Cyber Forums</a>
-            </small>
-            </h5>
-        </div>
-        <div class="col-sm-3">
-            <h5>Articles
-            <small class="footer-list">
-                    <a href="/articles/annoucements">Annoucements</a>
-                    <a href="/underconstruction">News</a>
-                    <a href="/underconstruction">Media</a>
-                    <a href="/articles/messages">Messages</a>
-                </ul>
-            </small>
-            </h5>
-        </div>
-        <div class="col-sm-3">
-            <h5>Research centers
-            <small class="footer-list">
-                    <a href="/websecurity">Web security research</a>
-                    <a href="/networksecurity">Network security research</a>
-                    <a href="/iotsecurity">IoT security research</a>
-                    <a href="/cybersecurity">Cyber security research</a>
-                </ul>
-            </small>
-            </h5>
-        </div>
-        <div class="col-sm-3">
-            <h5>Courses
-            <small class="footer-list">
-                    <a href="/underconstruction">Cyber security training</a>
-                </ul>
-            </small>
-            </h5>
-        </div>
+    <div class="socialLinkFooter">
+          <a href="#" class="disabled"><img src="/images/social-networks/twitter.png"/></a>
+          <a href="https://www.facebook.com/NCSASSSummit2014" target="_blank"><img src="/images/social-networks/facebook.png"/></a>
+          <a href="#" class="disabled"><img src="/images/social-networks/g-plus.png"/></a>
+          <a href="#" class="disabled"><img src="/images/social-networks/linked-in.png"/></a>
     </div>
-<span class="navbar-center" >    
-    <span class="text-default">&copy; Copyright 2013-2014 | &reg; All Rights Reserved</span>
-</span>
+</div>
+<div>
+    <span class="text-default navbar-center ">&copy; Copyright 2013-2014 | &reg; All Rights Reserved</span>
+    </span>
+</div>

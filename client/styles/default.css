@@ -16,6 +16,7 @@
     }
     .banner-heading>div>h6 {
         /*font-size: 80%;*/
+        
         display: none;
     }
     .homeCarousel {
@@ -26,6 +27,13 @@
         height: 100%;
         width: auto;
     }
+    .socialLinkAnimation{
+       display: none;
+    }
+    .socialLinkFooter{
+        display: block;
+    }
+
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .banner-heading {
@@ -43,6 +51,12 @@
         height: 100%;
         width: auto;
     }
+    .socialLinkAnimation{
+       display: none;
+    }
+    .socialLinkFooter{
+        display: block;
+    }
 }
 @media screen and (min-width: 993px) {
     .banner-heading {
@@ -51,8 +65,18 @@
     .galleryCarousel {
         height: 300px;
         /*height: 100%;*/
+        
         width: auto;
     }
+    .socialLinkAnimation{
+       display: block;
+    }
+    .socialLinkFooter{
+        display: none;
+    }
+}
+.sociallinkFooter{
+    margin:20px;
 }
 .footer-logo {
     width: 40px;
@@ -132,6 +156,12 @@ div .articleListDesc {
     -o-transition: all 1s;
     transition: all 1s;
 }
+.social ul li a img{
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    -ms-transform: scale(.8, .8);
+    -o-transform: scale(.8, .8);
+}
 .social ul li:hover {
     -webkit-transform: translate(110px, 0);
     -moz-transform: translate(110px, 0);
@@ -193,10 +223,11 @@ div .articleListDesc {
 .panel-heading {
     font-weight: bolder;
     background-color: #74AFAD;
-    min-height:30px;
+    min-height: 30px;
 }
 body {
-    background-color: #558C89;
+    background-color: #ECECEA;
+    font-family: Verdana, Geneva, sans-serif;
     /*font-size:12px;*/
     /*background: -webkit-linear-gradient(#eeeeee, #bbbbbb); 
     background: -o-linear-gradient(#eeeeee, #bbbbbb); 
@@ -205,35 +236,36 @@ body {
 }
 /*Social network links*/
 
-body {
-    font-family: Verdana, Geneva, sans-serif;
-}
-h1 h2 h3 h4 h5 h6 {
-    font-family: Impact, Charcoal, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trebuchet MS', Charcoal, sans-serif;
+    color: #000000;
+
 }
 .header {
     background-color: #ECECEA;
     color: #222222;
 }
 .content {
-    color: #000000;
+    color: #333333;
     /*background: url('/images/bg.png');*/
     /*content: "";*/
     /*opacity: 0.5;*/
     /*position: absolute;*/
     /*z-index: -1;*/
     
-    background-color: white;
+    background-color: #ECECEA;
     /*opacity: .3;*/
 }
 .footer {
     background-color: #D9853B;
-}
-.footer-list {
     color: white;
 }
-
-.footer-list>a{
+.block{
+    display: block;
+}
+.footer-list {
+}
+.footer-list>a {
     display: block;
     color: white;
 }
@@ -244,16 +276,29 @@ p {
     text-align: justify;
     text-justify: inter-word;
 }
-.left{
-    float:left;
+.left {
+    float: left;
     /*margin-top:-10px;*/
 }
-.right{
-    float:right;
+.right {
+    float: right;
     /*margin-top:-10px;*/
 }
-.exception-heading{
+.exception-heading {
     min-height: 300px;
     font-size: 30px;
-    font-color: red;    
+    font-color: red;
+}
+.footer {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #363636;
+    width: 100%;
+
+}
+.ruler{
+    border-bottom: 1px dotted #154B81;
+    width: 100%;
+
 }

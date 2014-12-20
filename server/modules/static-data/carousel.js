@@ -1,7 +1,8 @@
 module.exports = [{
 	image:'/images/test/1.jpg',
 	title: 'Cyber security', 
-	desc: 'Cyber security and its awareness program'
+	desc: 'Cyber security and its awareness program',
+	url:""
 },
 {
 	image:'/images/test/2.jpg',

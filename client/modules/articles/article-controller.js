@@ -1,7 +1,7 @@
 myApp.controller("ArticleController", ['$scope', '$rootScope', '$routeParams', '$location', 'Article', 
 	function($scope, $rootScope, $routeParams, $location, Article) {
 	var articleType = $routeParams.type;
-	$rootScope.pageName = articleType.substring(0,1).toUpperCase() + articleType.substring(1, articleType.length-1);
+	$rootScope.pageName = articleType.substring(0,1).toUpperCase() + articleType.substring(1, articleType.length-1)+'s';
 	$scope.articleType = articleType;
 	$scope.articleId = $routeParams.id;
 	$scope.article = {};

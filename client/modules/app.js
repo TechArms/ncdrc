@@ -91,6 +91,7 @@ var myConfig = ['$routeProvider', '$locationProvider', function($routeProvider, 
 
 var myRun = ['$location', '$rootScope', function($location, $rootScope) {
     $rootScope.$on('$routeChangeStart', function() {
+        $rootScope.pageName = "";
         if ($rootScope.isAuthenticated && $location.path() == "/") {
             $location.path('/home');
         }
