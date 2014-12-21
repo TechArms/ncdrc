@@ -60,6 +60,7 @@
 .carousel-inner > .item > img {
     height: 360px;
     width: 100%;
+    max-width: 900px;
     opacity: .8;
     border-radius: 50;
 }

@@ -4,7 +4,7 @@ myApp.controller("NavigationController", ['$scope', 'Menu', function($scope, Men
         title: "Projects",
         links: [{
             title: "Research centers",
-            url: "/underconstruction"
+            url: "/researchlabs"
         },{
             title: "Audits",
             url: "/underconstruction"
@@ -19,37 +19,40 @@ myApp.controller("NavigationController", ['$scope', 'Menu', function($scope, Men
         title: "Articles",
         links: [{
             title: "Annoucements",
-            url: "/underconstruction"
+            url: "/articles/annoucements"
         },{
             title: "News",
             url: "/underconstruction"
         },{
             title: "Media",
-            url: "/underconstruction"
+            url: "/media"
         },{
             title: "Messages",
             url: "/underconstruction"
-        },]
+        },{
+            title: "Gallery",
+            url: "/gallerylist"
+        }]
     },{
         title: "Research centers",
         links: [{
             title: "Web security",
-            url: "/underconstruction"
+            url: "/websecurity"
         },{
             title: "Network security",
-            url: "/underconstruction"
+            url: "/networksecurity"
         },{
             title: "IoT security",
-            url: "/underconstruction"
+            url: "/iotsecurity"
         },{
             title: "Cyber security",
-            url: "/underconstruction"
+            url: "/cybersecurity"
         },]
     },{
         title: "Courses",
         links: [{
             title: "Cyber security training",
-            url: "/underconstruction"
+            url: "/courses"
         }]
     }]
 

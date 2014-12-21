@@ -4,9 +4,9 @@ module.exports = [{
 	title: 'US Hospital Breach Biggest Yet to Exploit Heartbleed Bug: Expert',
 	desc: 'Hackers who stole the personal data of about 4.5 million patients of hospital group Community Health Systems',
 	datetime: new Date(),
-	author: 'Dhaylan Prakasam',
+	author: 'NCDRC',
 	image:'/images/test/1.jpg',
-	imageCaption: 'testing image caption',
+	imageCaption: 'Security breach',
 	type:'news'
 },
 {
@@ -15,8 +15,8 @@ module.exports = [{
 	title: 'US Hospital Breach Biggest Yet to Exploit Heartbleed Bug: Expert',
 	desc: 'Hackers who stole the personal data of about 4.5 million patients of hospital group Community Health Systems',
 	datetime: new Date(),
-	author: 'Dhaylan Prakasam',
+	author: 'NCDRC',
 	image:'/images/test/1.jpg',
-	imageCaption: 'testing image caption',
+	imageCaption: 'Security breach',
 	type:'news'
 }]

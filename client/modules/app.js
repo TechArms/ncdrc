@@ -64,7 +64,7 @@ var myConfig = ['$routeProvider', '$locationProvider', function($routeProvider, 
             controller: "AboutusController",
             templateUrl: '/modules/us/contactus.html',
             data: {
-                pageName: ""
+                pageName: "Contact us"
             }
         })
         .when('/gallerylist', {
@@ -83,7 +83,25 @@ var myConfig = ['$routeProvider', '$locationProvider', function($routeProvider, 
         .when('/media', {
             templateUrl: '/modules/static/media.html',
             data: {
-                pageName: ""
+                pageName: "Media"
+            }
+        })
+        .when('/projects', {
+            templateUrl: '/modules/static/projects.html',
+            data: {
+                pageName: "Projects"
+            }
+        })
+        .when('/researchlabs', {
+            templateUrl: '/modules/static/research-labs.html',
+            data: {
+                pageName: "Research Areas"
+            }
+        })
+         .when('/courses', {
+            templateUrl: '/modules/static/courses.html',
+            data: {
+                pageName: "Courses"
             }
         })
         .otherwise({

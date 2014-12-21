@@ -27,13 +27,15 @@
         height: 100%;
         width: auto;
     }
-    .socialLinkAnimation{
-       display: none;
+    .socialLinkAnimation {
+        display: none;
     }
-    .socialLinkFooter{
+    .socialLinkFooter {
         display: block;
     }
-
+    .homeCarouselCaption{
+        display: none;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .banner-heading {
@@ -51,11 +53,14 @@
         height: 100%;
         width: auto;
     }
-    .socialLinkAnimation{
-       display: none;
+    .socialLinkAnimation {
+        display: none;
     }
-    .socialLinkFooter{
+    .socialLinkFooter {
         display: block;
+    }
+    .homeCarouselCaption{
+        display: none;
     }
 }
 @media screen and (min-width: 993px) {
@@ -68,15 +73,18 @@
         
         width: auto;
     }
-    .socialLinkAnimation{
-       display: block;
+    .socialLinkAnimation {
+        display: block;
     }
-    .socialLinkFooter{
+    .socialLinkFooter {
         display: none;
     }
+    .homeCarouselCaption{
+        display: block;
+    }
 }
-.sociallinkFooter{
-    margin:20px;
+.sociallinkFooter {
+    margin: 20px;
 }
 .footer-logo {
     width: 40px;
@@ -156,7 +164,7 @@ div .articleListDesc {
     -o-transition: all 1s;
     transition: all 1s;
 }
-.social ul li a img{
+.social ul li a img {
     -webkit-transform: scale(.8, .8);
     -moz-transform: scale(.8, .8);
     -ms-transform: scale(.8, .8);
@@ -239,7 +247,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Trebuchet MS', Charcoal, sans-serif;
     color: #000000;
-
 }
 .header {
     background-color: #ECECEA;
@@ -254,18 +261,17 @@ h1, h2, h3, h4, h5, h6 {
     /*z-index: -1;*/
     
     background-color: #ECECEA;
+    min-height: 400px;
     /*opacity: .3;*/
 }
 .footer {
     background-color: #D9853B;
     color: white;
 }
-.block{
+.block {
     display: block;
 }
-.footer-list {
-}
-.footer-list>a {
+.footer-list {} .footer-list>a {
     display: block;
     color: white;
 }
@@ -295,10 +301,15 @@ p {
     padding-right: 30px;
     background: #363636;
     width: 100%;
-
 }
-.ruler{
+.ruler {
     border-bottom: 1px dotted #154B81;
     width: 100%;
-
 }
+.homeCarouselCaption {
+    background-color: black;
+    opacity: .6;
+    margin-top: 20px;
+    text-align: center
+}
+
