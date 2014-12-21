@@ -80,6 +80,12 @@ var myConfig = ['$routeProvider', '$locationProvider', function($routeProvider, 
                 pageName: ""
             }
         })
+        .when('/media', {
+            templateUrl: '/modules/static/media.html',
+            data: {
+                pageName: ""
+            }
+        })
         .otherwise({
             templateUrl: '/modules/exceptions/page-not-found.html',
             data: {

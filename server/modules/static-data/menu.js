@@ -96,7 +96,7 @@ module.exports = [
                 desc: ""
             }, {
                 name: "Media",
-                url: "/articles/media",
+                url: "/media",
                 desc: ""
             }, 
             {

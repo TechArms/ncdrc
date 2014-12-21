@@ -3,9 +3,9 @@ module.exports = [{
 	id: '1', 
 	title: 'Summit 2015',
 	datetime: new Date(),
-	author: 'Dhaylan Prakasam',
+	author: 'NCDRC',
 	image:'/images/test/1.jpg',
-	imageCaption: 'testing image caption',
+	imageCaption: 'Awareness',
 	type:'announcement',
 	smallDesc: '<p> The growth of the internet gave rise to many important services accessible to anyone with a connection. While malicious users often use the internet for personal gain, this may not be limited to financial, material gain. </p> ',
 	desc: '<p> The growth of the internet gave rise to many important services accessible to anyone with a connection. While malicious users often use the internet for personal gain, this may not be limited to financial, material gain. </p> \
@@ -24,7 +24,7 @@ module.exports = [{
 	datetime: new Date(),
 	author: 'NCDRC',
 	image:'/images/test/1.jpg',
-	imageCaption: 'testing image caption',
+	imageCaption: 'Awareness',
 	type:'announcement',
 	desc: '<p> NCDRC Inauguration happens on 01-Jan-2015 and everyone is welcomed and make the event a grand success. </p> \
 		'
