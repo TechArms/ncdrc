@@ -1,6 +1,6 @@
 <div class="row" ng-controller="NavigationController">
     <div class="col-sm-3 col-xs-5" ng-repeat="footer in footers">
-        <h4 class="footer-link">{{footer.title}}</h4>
+        <h5 class="footer-link">{{footer.title}}</h5>
         <a class="block footer-link" ng-repeat="link in footer.links" ng-href="{{link.url}}">{{link.title}}</a>
     </div>
     <div class="socialLinkFooter">

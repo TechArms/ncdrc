@@ -269,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     background-color: #D9853B;
     color: white;
+    font-size: 85%;
 }
 .footer-link{
     color: #FFFFFF;
