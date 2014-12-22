@@ -1,7 +1,7 @@
 <div class="row" ng-controller="NavigationController">
     <div class="col-sm-3" ng-repeat="footer in footers">
-        {{footer.title}}
-        <a class="block" ng-repeat="link in footer.links" ng-href="{{link.url}}">{{link.title}}</a>
+        <h4 class="footer-link">{{footer.title}}</h4>
+        <a class="block footer-link" ng-repeat="link in footer.links" ng-href="{{link.url}}">{{link.title}}</a>
     </div>
     <div class="socialLinkFooter">
           <a href="#" class="disabled"><img src="/images/social-networks/twitter.png"/></a>
@@ -9,7 +9,7 @@
           <a href="#" class="disabled"><img src="/images/social-networks/g-plus.png"/></a>
           <a href="#" class="disabled"><img src="/images/social-networks/linked-in.png"/></a>
     </div>
-</div>
+</div><br/>
 <div>
     <span class="text-default navbar-center ">&copy; Copyright 2013-2014 | &reg; All Rights Reserved</span>
     </span>

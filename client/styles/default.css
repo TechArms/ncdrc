@@ -229,10 +229,12 @@ div .articleListDesc {
     font-size: 60%;
 }
 .panel-heading {
-    font-weight: bolder;
-    background-color: #74AFAD;
+    /*font-weight: bolder;*/
+    /*background-color: #74AFAD;*/
     min-height: 30px;
+    vertical-align: top;
 }
+
 body {
     background-color: #ECECEA;
     font-family: Verdana, Geneva, sans-serif;
@@ -268,10 +270,15 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #D9853B;
     color: white;
 }
+.footer-link{
+    color: #FFFFFF;
+}
 .block {
     display: block;
 }
-.footer-list {} .footer-list>a {
+.footer-list {} 
+
+.footer-list>a {
     display: block;
     color: white;
 }
